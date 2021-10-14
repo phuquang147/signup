@@ -18,19 +18,24 @@
     <Window.Resources>
         <SolidColorBrush x:Key="clrPrimary" Color="#FF35A0FE" />
 
-        <Style TargetType="TextBox" x:Key="textboxStyle" BasedOn="{StaticResource MaterialDesignOutlinedTextBox}">
+        <Style TargetType="TextBox" x:Key="textboxStyle" BasedOn="{StaticResource MaterialDesignFloatingHintTextBox}">
             <Setter Property="BorderBrush" Value="{StaticResource clrPrimary}"/>
             <Setter Property="AcceptsReturn" Value="True"/>
-            <Setter Property="Width" Value="323"/>
+            <Setter Property="Width" Value="333"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="8 0 8 8"/>
         </Style>
 
-        <Style TargetType="PasswordBox" x:Key="pwdBoxStyle" BasedOn="{StaticResource MaterialDesignOutlinedPasswordBox}">
-            <Setter Property="Width" Value="323"/>
+        <Style TargetType="PasswordBox" x:Key="pwdBoxStyle" BasedOn="{StaticResource MaterialDesignFloatingHintPasswordBox}">
+            <Setter Property="Width" Value="333"/>
+            <Setter Property="BorderBrush" Value="{StaticResource clrPrimary}"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="8 0 8 8"/>
         </Style>
         
         <Style TargetType="materialDesign:PackIcon" x:Key="styleIcon">
-            <Setter Property="Height" Value="24"/>
-            <Setter Property="Width" Value="50"/>
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="Width" Value="40"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="Foreground" Value="{StaticResource clrPrimary}"/>
 
@@ -71,31 +76,29 @@
         <StackPanel Grid.Row="1" Margin="60 50">
             <StackPanel Orientation="Horizontal">
                 <TextBox x:Name="txbHo"
-                    Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                    AcceptsReturn="True"
+                    Style="{StaticResource textboxStyle}"
                     Width="185"
                     HorizontalAlignment="Left"
                     Margin="0 0 10 0"
                     materialDesign:HintAssist.Hint="Họ"
                 />
                 <TextBox x:Name="txbTen"
-                    Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                    AcceptsReturn="True"
+                    Style="{StaticResource textboxStyle}"   
                     Width="185"
                     HorizontalAlignment="Right"
                     materialDesign:HintAssist.Hint="Tên"
                 />
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+            <StackPanel Orientation="Horizontal" Margin="0 16 0 0">
                 <Border Style="{StaticResource borderStyle}">
                     <materialDesign:PackIcon Kind="Account" Style="{StaticResource styleIcon }"/>
                 </Border>
                 <TextBox x:Name="txbTenDangNhap"
                     Style="{StaticResource textboxStyle}"
-                    materialDesign:HintAssist.Hint="Tên đăng nhập"
+                    materialDesign:HintAssist.Hint="Tên đăng nhập" AutomationProperties.IsRequiredForForm="True"
                 />
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+            <StackPanel Orientation="Horizontal" Margin="0 16 0 0">
                 <Border Style="{StaticResource borderStyle}">
                     <materialDesign:PackIcon Kind="Email" Style="{StaticResource styleIcon}"/>
                 </Border>
@@ -104,17 +107,16 @@
                     materialDesign:HintAssist.Hint="E-mail"
                 />
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+            <StackPanel Orientation="Horizontal" Margin="0 16 0 0">
                 <Border Style="{StaticResource borderStyle}">
                     <materialDesign:PackIcon Kind="Lock" Style="{StaticResource styleIcon}"/>
                 </Border>
                 <PasswordBox x:Name="txbMatKhau"
-                    Style="{StaticResource MaterialDesignOutlinedPasswordBox}"
-                    Width="323"
+                    Style="{StaticResource pwdBoxStyle}"
                     materialDesign:HintAssist.Hint="Mật khẩu" 
                 />
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+            <StackPanel Orientation="Horizontal" Margin="0 16 0 0">
                 <Border Style="{StaticResource borderStyle}">
                     <materialDesign:PackIcon Kind="LockOpen" Style="{StaticResource styleIcon}"/>
                 </Border>
@@ -123,16 +125,19 @@
                     materialDesign:HintAssist.Hint="Nhập lại mật khẩu" 
                 />
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+            <StackPanel Orientation="Horizontal" Margin="0 16 0 0">
                 <Border Style="{StaticResource borderStyle}">
                     <materialDesign:PackIcon Kind="Calendar" Style="{StaticResource styleIcon}"/>
                 </Border>
                 <DatePicker x:Name="txbNgaySinh"
-                    Width="323"
+                    Width="333"
                     materialDesign:HintAssist.Hint="Ngày sinh"
-                    Style="{StaticResource MaterialDesignOutlinedDatePicker}" />
+                    BorderBrush="#FF35A0FE"
+                    FontSize="14"
+                    Padding="8 0 8 8"
+                    Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
             </StackPanel>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 20 0 0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 30 0 0">
                 <Button
                     Style="{StaticResource MaterialDesignOutlinedLightButton}"
                     Margin="0 0 10 0"
