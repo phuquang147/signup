@@ -13,9 +13,12 @@
         AllowsTransparency="True"
         Background="Transparent">
     <Grid>
-        <Border Padding="30 40" 
+        <Border Padding="30 20 30 30" 
             BorderThickness="2" BorderBrush="#FF35A0FE" CornerRadius="10" Background="White">
             <StackPanel>
+                <TextBlock HorizontalAlignment="Center" Margin="0 0 0 10" FontSize="14">
+                    Nhập mã xác nhận
+                </TextBlock>
                 <TextBox
                     BorderBrush="#FF35A0FE"
                     AcceptsReturn="True"
@@ -24,14 +27,14 @@
                 />
                 <StackPanel Orientation="Horizontal" 
                             HorizontalAlignment="Center" 
-                            Margin="0 20 0 0"
+                            Margin="0 16 0 0"
                             >
                     <Button
                     Style="{StaticResource MaterialDesignOutlinedLightButton}"
                     Margin="0 0 8 0"
                     Height="40"
                     Width="114"
-                    ToolTip="Resource name: MaterialDesignRaisedLightButton">
+                    ToolTip="Resource name: MaterialDesignRaisedLightButton" Click="Button_Click">
                         HUỶ
                     </Button>
                     <Button
