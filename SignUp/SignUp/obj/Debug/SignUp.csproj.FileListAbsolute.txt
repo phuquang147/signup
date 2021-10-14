@@ -20,3 +20,27 @@ C:\Users\pc\source\repos\SignUp\SignUp\obj\Debug\SignUp.csproj.CoreCompileInputs
 C:\Users\pc\source\repos\SignUp\SignUp\obj\Debug\SignUp.csproj.CopyComplete
 C:\Users\pc\source\repos\SignUp\SignUp\obj\Debug\SignUp.exe
 C:\Users\pc\source\repos\SignUp\SignUp\obj\Debug\SignUp.pdb
+D:\Github Repo\signup\SignUp\SignUp\bin\Debug\SignUp.exe.config
+D:\Github Repo\signup\SignUp\SignUp\bin\Debug\SignUp.exe
+D:\Github Repo\signup\SignUp\SignUp\bin\Debug\SignUp.pdb
+D:\Github Repo\signup\SignUp\SignUp\bin\Debug\MaterialDesignColors.dll
+D:\Github Repo\signup\SignUp\SignUp\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Github Repo\signup\SignUp\SignUp\bin\Debug\MaterialDesignColors.pdb
+D:\Github Repo\signup\SignUp\SignUp\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Github Repo\signup\SignUp\SignUp\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Github Repo\signup\SignUp\SignUp\obj\Debug\SignUp.csproj.AssemblyReference.cache
+D:\Github Repo\signup\SignUp\SignUp\obj\Debug\MainWindow.g.cs
+D:\Github Repo\signup\SignUp\SignUp\obj\Debug\App.g.cs
+D:\Github Repo\signup\SignUp\SignUp\obj\Debug\SignUp_MarkupCompile.cache
+D:\Github Repo\signup\SignUp\SignUp\obj\Debug\SignUp_MarkupCompile.lref
+D:\Github Repo\signup\SignUp\SignUp\obj\Debug\App.baml
+D:\Github Repo\signup\SignUp\SignUp\obj\Debug\MainWindow.baml
+D:\Github Repo\signup\SignUp\SignUp\obj\Debug\SignUp.g.resources
+D:\Github Repo\signup\SignUp\SignUp\obj\Debug\SignUp.Properties.Resources.resources
+D:\Github Repo\signup\SignUp\SignUp\obj\Debug\SignUp.csproj.GenerateResource.cache
+D:\Github Repo\signup\SignUp\SignUp\obj\Debug\SignUp.csproj.CoreCompileInputs.cache
+D:\Github Repo\signup\SignUp\SignUp\obj\Debug\SignUp.csproj.CopyComplete
+D:\Github Repo\signup\SignUp\SignUp\obj\Debug\SignUp.exe
+D:\Github Repo\signup\SignUp\SignUp\obj\Debug\SignUp.pdb
+D:\Github Repo\signup\SignUp\SignUp\obj\Debug\InputCode.g.cs
+D:\Github Repo\signup\SignUp\SignUp\obj\Debug\InputCode.baml

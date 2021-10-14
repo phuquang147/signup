@@ -1,0 +1,48 @@
+﻿<Window x:Class="SignUp.InputCode"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SignUp"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="InputCode" Height="200" Width="300"
+        ResizeMode="NoResize" 
+        WindowStyle="None" 
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"
+        Background="Transparent">
+    <Grid>
+        <Border Padding="30 40" 
+            BorderThickness="2" BorderBrush="#FF35A0FE" CornerRadius="10" Background="White">
+            <StackPanel>
+                <TextBox
+                    BorderBrush="#FF35A0FE"
+                    AcceptsReturn="True"
+                    FontSize="16"
+                    Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                />
+                <StackPanel Orientation="Horizontal" 
+                            HorizontalAlignment="Center" 
+                            Margin="0 20 0 0"
+                            >
+                    <Button
+                    Style="{StaticResource MaterialDesignOutlinedLightButton}"
+                    Margin="0 0 8 0"
+                    Height="40"
+                    Width="114"
+                    ToolTip="Resource name: MaterialDesignRaisedLightButton">
+                        HUỶ
+                    </Button>
+                    <Button
+                        Style="{StaticResource MaterialDesignFlatLightBgButton}"
+                        Height="40"
+                        Width="114"
+                        ToolTip="Resource name: MaterialDesignRaisedLightButton">
+                        XÁC NHẬN
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
