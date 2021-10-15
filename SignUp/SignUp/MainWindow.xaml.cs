@@ -43,42 +43,55 @@ namespace SignUp
         {
             var bc = new BrushConverter();
             bool isFulFill = true;
-            if (txbHo.Text.Trim() == "" || txbTen.Text.Trim()=="")
+            if (txbHo.Text.Trim() == "")
             {
                 txbHo.BorderBrush = (Brush)bc.ConvertFrom("#F6416C");
                 isFulFill = false;
             }
+            else
+                txbHo.BorderBrush = (Brush)bc.ConvertFrom("#FF35A0FE");
             if (txbTen.Text.Trim() == "")
             {
                 txbTen.BorderBrush = (Brush)bc.ConvertFrom("#F6416C");
                 isFulFill = false;
             }
+            else
+                txbTen.BorderBrush = (Brush)bc.ConvertFrom("#FF35A0FE");
             if (txbTenDangNhap.Text.Trim() == "")
             {
                 txbTenDangNhap.BorderBrush = (Brush)bc.ConvertFrom("#F6416C");
                 isFulFill = false;
             }
+            else
+                txbTenDangNhap.BorderBrush = (Brush)bc.ConvertFrom("#FF35A0FE");
             if (txbEmail.Text.Trim() == "")
             {
                 txbEmail.BorderBrush = (Brush)bc.ConvertFrom("#F6416C");
                 isFulFill = false;
             }
+            else
+                txbEmail.BorderBrush = (Brush)bc.ConvertFrom("#FF35A0FE");
             if (txbMatKhau.Password.Trim() == "")
             {
                 txbMatKhau.BorderBrush = (Brush)bc.ConvertFrom("#F6416C");
                 isFulFill = false;
             }
+            else
+                txbMatKhau.BorderBrush = (Brush)bc.ConvertFrom("#FF35A0FE");
             if (txbNhapLaiMatKhau.Password.Trim() == "")
             {
                 txbNhapLaiMatKhau.BorderBrush = (Brush)bc.ConvertFrom("#F6416C");
                 isFulFill = false;
             }
+            else
+                txbNhapLaiMatKhau.BorderBrush = (Brush)bc.ConvertFrom("#FF35A0FE");
             if (txbNgaySinh.SelectedDate.ToString() == "")
             {
                 txbNgaySinh.BorderBrush = (Brush)bc.ConvertFrom("#F6416C");
                 isFulFill = false;
             }
-            
+            else
+                txbNgaySinh.BorderBrush = (Brush)bc.ConvertFrom("#FF35A0FE");
             if (isFulFill)
             {
                 InputCode ip = new InputCode();
