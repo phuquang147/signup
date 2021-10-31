@@ -44,3 +44,5 @@ D:\Github Repo\signup\SignUp\SignUp\obj\Debug\SignUp.exe
 D:\Github Repo\signup\SignUp\SignUp\obj\Debug\SignUp.pdb
 D:\Github Repo\signup\SignUp\SignUp\obj\Debug\InputCode.g.cs
 D:\Github Repo\signup\SignUp\SignUp\obj\Debug\InputCode.baml
+D:\Github Repo\signup\SignUp\SignUp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Github Repo\signup\SignUp\SignUp\obj\Debug\Resources\SignUpResource.baml

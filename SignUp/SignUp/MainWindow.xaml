@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SignUp"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
         Title="MainWindow" 
         Height="600" 
@@ -14,7 +15,8 @@
         WindowStartupLocation="CenterScreen"
         AllowsTransparency="True"
         Background="Transparent"
-        MouseDown="Window_MouseDown">
+        MouseDown="Window_MouseDown"
+        DataContext="{StaticResource SignUpVM}">
     <Window.Resources>
         <SolidColorBrush x:Key="clrPrimary" Color="#FF35A0FE" />
 
@@ -58,8 +60,8 @@
             <Border CornerRadius="10 10 0 0">
                 <Border.Background>
                     <LinearGradientBrush>
-                        <GradientStop Color="#35A0FE" Offset="0"/>
-                        <GradientStop Color="#FFA3D3FF" Offset="1"/>
+                        <GradientStop Color="#08AEEA" Offset="0"/>
+                        <GradientStop Color="#2AF598" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
             </Border>
@@ -81,13 +83,14 @@
                     HorizontalAlignment="Left"
                     Margin="0 0 10 0"
                     materialDesign:HintAssist.Hint="Họ"
-                />
+                    Text="{Binding FirstName, UpdateSourceTrigger=PropertyChanged}"/>
+
                 <TextBox x:Name="txbTen"
                     Style="{StaticResource textboxStyle}"   
                     Width="185"
                     HorizontalAlignment="Right"
                     materialDesign:HintAssist.Hint="Tên"
-                />
+                    Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged}"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="0 16 0 0">
                 <Border Style="{StaticResource borderStyle}">
@@ -95,7 +98,7 @@
                 </Border>
                 <TextBox x:Name="txbTenDangNhap"
                     Style="{StaticResource textboxStyle}"
-                    materialDesign:HintAssist.Hint="Tên đăng nhập" AutomationProperties.IsRequiredForForm="True"
+                    materialDesign:HintAssist.Hint="Tên đăng nhập"
                 />
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="0 16 0 0">
@@ -139,22 +142,17 @@
                 
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 30 0 0">
-                <Button
-                    Style="{StaticResource MaterialDesignOutlinedLightButton}"
-                    Margin="0 0 10 0"
-                    Height="50"
-                    Width="100"
-                    ToolTip="Resource name: MaterialDesignRaisedLightButton"
-                    Click="Button_Click">
-                    HỦY
-                </Button>
-                <Button
+                <Button Content="HUỶ"
+                        Style="{StaticResource MaterialDesignOutlinedLightButton}"
+                        Margin="0 0 10 0"
+                        Height="50"
+                        Width="100"/>
+
+                <Button Content="ĐĂNG KÝ"
                     Style="{StaticResource MaterialDesignFlatLightBgButton}"
                     Height="50"
                     Width="100"
-                    ToolTip="Resource name: MaterialDesignRaisedLightButton" Click="Button_Click_1">
-                    ĐĂNG KÝ
-                </Button>
+                    Command="{Binding ValidationSignUpCommand}"/>
             </StackPanel>
         </StackPanel>
     </Grid>
